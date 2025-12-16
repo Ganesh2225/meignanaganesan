@@ -19,6 +19,7 @@ const Education = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
+            data-animate="card"
             className="card-surface"
           >
             <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-brand-200">

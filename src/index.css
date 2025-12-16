@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url(''https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap'');
 
 @tailwind base;
 @tailwind components;
@@ -8,11 +8,16 @@
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     sans-serif;
   color: #e2e8f0;
-  background-color: #020617;
+  background-color: #0b1021;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --wonder-indigo: #6a5af9;
+  --wonder-pink: #ff7eb9;
+  --wonder-cyan: #5ddcff;
+  --wonder-navy: #0b1021;
+  --wonder-surface: #14192e;
 }
 
 * {
@@ -20,7 +25,11 @@
 }
 
 body {
-  @apply bg-slate-950 text-slate-100 min-h-screen antialiased;
+  @apply text-slate-100 min-h-screen antialiased;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 126, 185, 0.08), transparent 25%),
+    radial-gradient(circle at 80% 0%, rgba(106, 90, 249, 0.1), transparent 25%),
+    radial-gradient(circle at 50% 80%, rgba(93, 220, 255, 0.08), transparent 22%),
+    #0b1021;
   margin: 0;
 }
 
@@ -34,7 +43,7 @@ a {
 
 @layer components {
   .pill {
-    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-slate-100;
+    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-slate-100 shadow-glow;
   }
 
   .card-surface {
@@ -42,7 +51,7 @@ a {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-brand-500 to-indigo-500 px-5 py-3 text-sm font-semibold text-white shadow-glow transition hover:scale-[1.02] hover:shadow-lg hover:shadow-brand-500/30;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-brand-500 to-wonder-pink px-5 py-3 text-sm font-semibold text-white shadow-glow transition hover:scale-[1.02] hover:shadow-lg hover:shadow-brand-500/30;
   }
 
   .btn-ghost {

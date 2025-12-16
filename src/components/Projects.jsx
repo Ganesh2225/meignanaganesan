@@ -18,6 +18,7 @@ const Projects = ({ projects }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.5, delay: index * 0.06 }}
+            data-animate="card"
             className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl backdrop-blur"
           >
             <div className="relative">

@@ -1,9 +1,53 @@
+import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, Send } from 'lucide-react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Hero = () => {
+  const heroRef = useRef(null)
+
+  useEffect(() => {
+    const el = heroRef.current
+    if (!el) return
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        '.gsap-hero-title',
+        { opacity: 0, y: 24 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.9,
+          ease: 'power3.out',
+        },
+      )
+
+      gsap.fromTo(
+        '.gsap-hero-metrics',
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: 'power3.out',
+          stagger: 0.08,
+          delay: 0.1,
+        },
+      )
+    }, el)
+
+    return () => ctx.revert()
+  }, [])
+
   return (
-    <section id="home" className="relative overflow-hidden py-20 sm:py-28">
+    <section
+      id="home"
+      ref={heroRef}
+      className="relative overflow-hidden py-20 sm:py-28"
+    >
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -12,7 +56,7 @@ const Hero = () => {
           className="space-y-6"
         >
           <p className="pill w-fit">MERN Stack Developer</p>
-          <h1 className="font-display text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="gsap-hero-title font-display text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
             Hi, I&apos;m MEIGNANAGANESAN S - building robust web applications.
           </h1>
           <p className="max-w-xl text-lg text-slate-300">
@@ -39,13 +83,30 @@ const Hero = () => {
               <div
                 key={item.label}
                 className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center"
+                data-animate="card"
+                aria-label={`${item.value} ${item.label}`}
               >
-                <p className="font-display text-2xl text-white">{item.value}</p>
+                <p className="gsap-hero-metrics font-display text-2xl text-white">
+                  {item.value}
+                </p>
                 <p className="text-xs uppercase tracking-[0.08em] text-slate-400">
                   {item.label}
                 </p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-2">
+            {['MERN', 'React', 'Node.js', 'MongoDB', 'Express.js', 'JavaScript'].map(
+              (chip) => (
+                <span
+                  key={chip}
+                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200"
+                >
+                  {chip}
+                </span>
+              ),
+            )}
           </div>
         </motion.div>
 

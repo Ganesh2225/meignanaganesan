@@ -8,15 +8,15 @@ import {
 } from 'lucide-react'
 
 export const skills = [
-  { name: 'React', level: 'Advanced', icon: Code2 },
-  { name: 'Express.js', level: 'Advanced', icon: Server },
-  { name: 'JavaScript', level: 'Advanced', icon: Code2 },
-  { name: 'MongoDB', level: 'Advanced', icon: Database },
-  { name: 'Firebase', level: 'Intermediate', icon: Database },
-  { name: 'SQL', level: 'Intermediate', icon: Database },
-  { name: 'Github', level: 'Advanced', icon: GitBranch },
-  { name: 'AWS', level: 'Intermediate', icon: Cloud },
-  { name: 'GCP', level: 'Intermediate', icon: Cloud },
+  { name: 'React', level: 'Advanced', icon: Code2, tone: 'indigo' },
+  { name: 'Express.js', level: 'Advanced', icon: Server, tone: 'slate' },
+  { name: 'JavaScript', level: 'Advanced', icon: Code2, tone: 'orange' },
+  { name: 'MongoDB', level: 'Advanced', icon: Database, tone: 'teal' },
+  { name: 'Firebase', level: 'Intermediate', icon: Database, tone: 'pink' },
+  { name: 'SQL', level: 'Intermediate', icon: Database, tone: 'indigo' },
+  { name: 'Github', level: 'Advanced', icon: GitBranch, tone: 'slate' },
+  { name: 'AWS', level: 'Intermediate', icon: Cloud, tone: 'orange' },
+  { name: 'GCP', level: 'Intermediate', icon: Globe, tone: 'cyan' },
 ]
 
 export const projects = [

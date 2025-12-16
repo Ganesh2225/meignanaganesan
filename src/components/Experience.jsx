@@ -19,6 +19,7 @@ const Experience = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
+            data-animate="card"
             className="card-surface"
           >
             <div className="flex items-start gap-4">

@@ -9,8 +9,8 @@ const About = () => {
     <Section
       id="about"
       eyebrow="About Me"
-      title="Building thoughtful interfaces with a user-first mindset."
-      description="I bridge design and engineering to ship performant, accessible products. I love translating complex ideas into intuitive experiences."
+      title="MERN Stack Developer passionate about building robust web applications."
+      description="Experienced in creating dynamic and responsive user interfaces, handling data efficiently, and optimizing web performance."
     >
       <div className="grid items-center gap-10 md:grid-cols-[1.1fr_0.9fr]">
         <motion.div
@@ -21,20 +21,21 @@ const About = () => {
           className="space-y-4 text-slate-300"
         >
           <p>
-            I collaborate closely with designers and backend teams to deliver
-            polished, scalable frontends. My toolkit includes design systems,
-            reusable components, and a focus on accessibility and performance.
+            A MERN stack developer with year of experience is well-versed in building 
+            robust web applications using MongoDB, Express.js, React, and Node.js. They 
+            have honed their skills in creating dynamic and responsive user interfaces, 
+            handling data efficiently, and optimizing web performance.
           </p>
           <p>
-            Beyond coding, I enjoy crafting motion guidelines, writing concise
-            documentation, and mentoring newer developers to ship confidently.
+            With their solid foundation, they are ready to tackle more complex challenges 
+            and contribute effectively to any development team.
           </p>
 
           <div className="grid gap-4 sm:grid-cols-3">
             {[
-              { label: 'Core Stack', value: 'React, TypeScript, Vite' },
-              { label: 'UI Systems', value: 'Tailwind, Storybook' },
-              { label: 'Collaboration', value: 'Agile, Figma, Git' },
+              { label: 'Languages', value: 'English, Tamil' },
+              { label: 'Framework', value: 'React, Express.js' },
+              { label: 'Database', value: 'MongoDB, Firebase, SQL' },
             ].map((item) => (
               <div
                 key={item.label}

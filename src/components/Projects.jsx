@@ -7,8 +7,8 @@ const Projects = ({ projects }) => {
     <Section
       id="projects"
       eyebrow="Projects"
-      title="Recent work that blends design, code, and motion."
-      description="A sample of product launches, dashboards, and component systems shipped with React and Tailwind."
+      title="Real-world applications built with MERN stack."
+      description="A collection of web applications showcasing full-stack development skills with React, Node.js, and MongoDB."
     >
       <div className="grid gap-8 md:grid-cols-2">
         {projects.map((project, index) => (

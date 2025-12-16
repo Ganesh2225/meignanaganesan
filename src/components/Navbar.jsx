@@ -5,6 +5,8 @@ const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Education', href: '#education' },
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -17,11 +19,11 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#home" className="flex items-center gap-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-indigo-500 font-display text-lg text-white shadow-lg shadow-brand-500/30">
-            ZS
+            MS
           </div>
           <div>
-            <p className="font-display text-base text-white">ZeroSoft</p>
-            <p className="text-xs text-slate-400">Frontend Developer</p>
+            <p className="font-display text-base text-white">MEIGNANAGANESAN S</p>
+            <p className="text-xs text-slate-400">MERN Stack Developer</p>
           </div>
         </a>
 

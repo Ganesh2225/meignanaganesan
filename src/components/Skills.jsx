@@ -6,8 +6,8 @@ const Skills = ({ skills }) => {
     <Section
       id="skills"
       eyebrow="Skills"
-      title="Tools that help me ship quality products."
-      description="A mix of front-end engineering, design systems, and motion to build experiences that feel polished and performant."
+      title="Technologies and tools I work with."
+      description="A comprehensive set of skills covering frontend, backend, databases, and cloud platforms for building full-stack applications."
     >
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {skills.map((skill, index) => {

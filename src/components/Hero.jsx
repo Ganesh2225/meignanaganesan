@@ -11,13 +11,13 @@ const Hero = () => {
           transition={{ duration: 0.7 }}
           className="space-y-6"
         >
-          <p className="pill w-fit">Frontend Developer</p>
+          <p className="pill w-fit">MERN Stack Developer</p>
           <h1 className="font-display text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
-            Hi, I&apos;m ZeroSoft - crafting elegant web experiences.
+            Hi, I&apos;m MEIGNANAGANESAN S - building robust web applications.
           </h1>
           <p className="max-w-xl text-lg text-slate-300">
-            I design and build responsive, accessible interfaces that delight
-            users. Focused on modern React, performance, and polished UX.
+            A MERN stack developer with experience in building dynamic and responsive 
+            web applications using MongoDB, Express.js, React, and Node.js.
           </p>
           <div className="flex flex-wrap gap-4">
             <a className="btn-primary" href="#projects">
@@ -32,9 +32,9 @@ const Hero = () => {
 
           <div className="grid grid-cols-3 gap-4 pt-4 sm:max-w-xl">
             {[
-              { label: 'Projects', value: '18+' },
-              { label: 'Experience', value: '4 yrs' },
-              { label: 'Remote ready', value: 'Worldwide' },
+              { label: 'Projects', value: '4+' },
+              { label: 'Experience', value: '2+ yrs' },
+              { label: 'Languages', value: '2' },
             ].map((item) => (
               <div
                 key={item.label}
@@ -61,24 +61,24 @@ const Hero = () => {
           <div className="relative card-surface p-8">
             <div className="mb-6 flex items-center gap-4">
               <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-indigo-500 text-2xl font-semibold text-white shadow-lg shadow-brand-500/30">
-                ZS
+                MS
               </div>
               <div>
-                <p className="text-sm text-slate-400">Currently crafting</p>
+                <p className="text-sm text-slate-400">Currently working at</p>
                 <p className="text-lg font-semibold text-white">
-                  Intuitive UIs & design systems
+                  Digisailor - MERN Stack Developer
                 </p>
               </div>
             </div>
 
             <div className="space-y-4 text-sm text-slate-300">
               <p>
-                I specialize in building modular component libraries, clean
-                animations, and performant frontends with React, Tailwind, and
-                TypeScript.
+                I specialize in building scalable web applications with React, Node.js, 
+                and MongoDB. Focused on creating efficient backend solutions and 
+                dynamic user interfaces.
               </p>
               <div className="flex flex-wrap gap-2">
-                {['React', 'Vite', 'Tailwind', 'Framer Motion', 'Accessibility'].map(
+                {['React', 'Node.js', 'MongoDB', 'Express.js', 'JavaScript'].map(
                   (tag) => (
                     <span
                       key={tag}

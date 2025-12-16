@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, MessageSquare } from 'lucide-react'
+import { Mail, MessageSquare, Phone, MapPin } from 'lucide-react'
 import Section from './Section'
 
 const Contact = () => {
@@ -29,20 +29,43 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="card-surface space-y-4"
         >
-          <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-brand-200">
-              <Mail size={20} />
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-brand-200">
+                <Mail size={20} />
+              </div>
+              <div>
+                <p className="text-sm text-slate-400">Email</p>
+                <p className="text-lg font-semibold text-white">
+                  meignanaganesans@gmail.com
+                </p>
+              </div>
             </div>
-            <div>
-              <p className="text-sm text-slate-400">Email</p>
-              <p className="text-lg font-semibold text-white">
-                  hello@zerosoft.dev
-              </p>
+            <div className="flex items-center gap-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-brand-200">
+                <Phone size={20} />
+              </div>
+              <div>
+                <p className="text-sm text-slate-400">Phone</p>
+                <p className="text-lg font-semibold text-white">
+                  +91 6380897607
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-brand-200">
+                <MapPin size={20} />
+              </div>
+              <div>
+                <p className="text-sm text-slate-400">Address</p>
+                <p className="text-lg font-semibold text-white">
+                  1s/11/5 Sankaraperi, Thoothukudi - 628002
+                </p>
+              </div>
             </div>
           </div>
           <p className="text-sm text-slate-400">
-            Prefer async? Drop a message anytime. I typically respond within 24
-            hours.
+            Feel free to reach out for collaboration opportunities or any inquiries.
           </p>
         </motion.div>
 
